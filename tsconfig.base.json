@@ -3,7 +3,7 @@
   "compilerOptions": {
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
-    "baseUrl": "./packages",
+    "baseUrl": ".",
     "moduleResolution": "Bundler",
     "paths": {
       "@oneiro/ui-kit": ["modules/ui-kit/src/client.ts"],

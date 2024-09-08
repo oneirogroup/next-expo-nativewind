@@ -1,19 +1,6 @@
-import type { Config } from "tailwindcss";
+import { defineConfig } from "@oneiro/ui-kit/server";
 
-const config: Config = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
-    },
-  },
-  plugins: [],
-};
-export default config;
+export default defineConfig({
+  content: ["./{components,app}/**/*.{js,ts,jsx,tsx,mdx}"],
+  extra: { important: "html", presets: [require("nativewind/preset")] }
+});
