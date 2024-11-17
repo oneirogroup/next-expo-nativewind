@@ -3,18 +3,26 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./build/shared-lib.js",
+      "types": "./build/index.d.ts"
+    }
+  },
+  "main": "./build/shared-lib.js",
+  "types": "./build/index.d.ts",
   "scripts": {
-    "build": "vite build",
-    "dev": "vite",
-    "preview": "vite preview"
+    "build": "vite build"
   },
   "dependencies": {
-    "@oneiro/ui-kit": "workspace:^"
+    "@mdreal/ui-kit": "^0.0.0-dev.51",
+    "react": "^18.3.1",
+    "recoil": "^0.7.7"
   },
   "devDependencies": {
     "@vitejs/plugin-react-swc": "^3.7.0",
-    "rollup-preserve-directives": "^1.1.1",
-    "typescript": "^5.5.4",
+    "autoprefixer": "^10.4.20",
+    "typescript": "5.4.2",
     "vite": "^5.4.3",
     "vite-plugin-dts": "^4.1.1",
     "vite-tsconfig-paths": "^5.0.1"

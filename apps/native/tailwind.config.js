@@ -1,5 +1,2 @@
-import { defineConfig } from "@oneiro/ui-kit/server";
-
-export default defineConfig({
-  content: ["./app/**/*.{js,jsx,ts,tsx}"]
-});
+require("ts-node/register")
+module.exports = require("./tailwind.config.ts")

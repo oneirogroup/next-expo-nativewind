@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@oneiro/ui-kit": "workspace:^",
+    "@mdreal/ui-kit": "^0.0.0-dev.51",
     "next": "^15.0.0-rc.0",
     "react": "19.0.0-rc-a03254bc-20240905",
     "react-dom": "19.0.0-rc-a03254bc-20240905",
